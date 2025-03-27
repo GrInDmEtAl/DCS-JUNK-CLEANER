@@ -68,7 +68,7 @@ function eventListener:onEvent(event)
         volumeToPurify = {
             id = world.VolumeType.SPHERE,
             params = {
-                point = coordinatesCrash,  -- Corrigido: Usa coordinatesCrash ao invés de currentZone.point
+                point = coordinatesCrash,      -- Corrigido: Usa coordinatesCrash ao invés de currentZone.point
                 radius = 8000
             }
         }
