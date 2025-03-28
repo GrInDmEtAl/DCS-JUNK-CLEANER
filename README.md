@@ -1,5 +1,5 @@
-Creditos para chrisneal72 https://github.com/chrisneal72       
-All Credits https://github.com/chrisneal72 Creator of initial changes
+Creditos para chrisneal72 https://github.com/chrisneal72/DCS-removeJunk-Scripts   
+All Credits https://github.com/chrisneal72/DCS-removeJunk-Scripts Creator of initial changes
 
 ![image](https://github.com/user-attachments/assets/e9a227ec-efc2-4909-a021-1acd5de74232)
 ![image](https://github.com/user-attachments/assets/adb4550d-b17e-4eef-a285-937d49161b3c)
