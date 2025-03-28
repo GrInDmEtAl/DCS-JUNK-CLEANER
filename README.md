@@ -10,6 +10,8 @@ o valor do trigger do ME 1200 = 20 minutos a cada 20 minutos ele executa o scrip
 É Necessário o MIST
 https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua
 
+Caso queira limpeza em zonas use o original https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua
+
 ENG
 
 In short, it cleans up the destroyed map/scenario carcasses to theoretically optimize performance server and client
@@ -17,3 +19,5 @@ the value of the ME trigger 1200 = 20 minutes every 20 minutes it runs the scrip
 
 MIST required
 https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua
+
+If you want zoned cleaning, use the original https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua
