@@ -1,6 +1,6 @@
 -- Criador das alterações iniciais https://github.com/chrisneal72/DCS-removeJunk-Scripts
 -- Ajustado por Grindmetal e DeepSeek[DeepThink R1 and Search], treinado para LUA DCS
--- Sistema de logging         V2 NOT TESTED
+-- Sistema de logging
 -- Original https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/2_OneSphereCleansThemAll.lua
 local logHeader = "[MAP CLEANER]"
 local function logInfo(msg)
