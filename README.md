@@ -15,7 +15,7 @@ Caso queira limpeza em zonas use o original https://github.com/chrisneal72/DCS-r
 ENG
 
 In short, it cleans up the destroyed map/scenario carcasses to theoretically optimize performance server and client
-the value of the ME trigger 1200 = 20 minutes every 20 minutes it runs the script and the scritp validates the entire map and after 10 seconds clears all junk from it
+the value of the ME trigger 1200 = 20 minutes every 20 minutes it runs the script and the script validates the entire map and after 10 seconds clears all junk/craters/debris  from it
 
 MIST required
 https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua
