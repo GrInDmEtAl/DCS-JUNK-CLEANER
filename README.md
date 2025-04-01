@@ -5,7 +5,7 @@ All Credits https://github.com/chrisneal72/DCS-removeJunk-Scripts Creator of ini
 ![image](https://github.com/user-attachments/assets/adb4550d-b17e-4eef-a285-937d49161b3c)
   
 Em resumo ele limpa as carcaças do cenário/mapa destruídas para teoricamente otimizar desempenho do servidor e cliente
-o valor do trigger do ME 1200 = 20 minutos a cada 20 minutos ele executa o script e o scritp valida todo o mapa e após 10 segundos limpa todos junk do mesmo
+o valor do trigger do ME 1200 = 20 minutos a cada 20 minutos ele executa o script e o script valida todo o mapa e após 10 segundos limpa todos junk/crateras/debris do mesmo
 
 É Necessário o MIST
 https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua
