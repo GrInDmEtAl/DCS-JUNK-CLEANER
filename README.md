@@ -20,4 +20,17 @@ the value of the ME trigger 1200 = 20 minutes every 20 minutes it runs the scrip
 MIST required
 https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua
 
-If you want zoned cleaning, use the original https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua
+If you want zoned cleaning, use the original https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua  
+    delay = 5, -- Tempo até a primeira limpeza (segundos)  
+    repeatInterval = 60, -- Intervalo para repetição da limpeza em segundos (ex: 600 para 10 min). Coloque 'nil' para executar apenas uma vez.          
+  
+
+  =====================================  
+V3 Notes DCS_Junk_Cleaner_V3.lua  
+O DCS_Junk_Cleaner_V3 não é necessário fazer como citado acima somente carrega ela diretamente e configurar o tempo inicial e intervalo para executar 
+Exemplo abaixo;  
+![image](https://github.com/user-attachments/assets/0a2d7d6f-7166-422c-a2dc-b02e6b1b80b0)
+
+  
+Log Output test.  
+![image](https://github.com/user-attachments/assets/7dac6058-cdcb-4311-8a84-0548f741b965)
