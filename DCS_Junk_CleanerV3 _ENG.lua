@@ -1,15 +1,15 @@
 -- Criado por Grindmetal & DeepSeek
--- Baseado no script original de chrisneal72
+-- Based on the original script by chrisneal72
 -- https://github.com/chrisneal72/DCS-removeJunk-Scripts
 
 local MapCleaner = {}
 
--- Configurações principais
+-- Main configurations
 MapCleaner.config = {
     sphereCenter = { x = -114146.14614615, z = 287114.61461461 }, -- Centro da esfera
-    radius = 975360, -- Raio de limpeza em metros (~975 km)
-    delay = 5, -- Tempo até a primeira limpeza (segundos)
-    repeatInterval = 600, -- Intervalo para repetição da limpeza em segundos (ex: 600 para 10 min). Coloque 'nil' para executar apenas uma vez.
+    radius = 975360, -- Cleaning radius in meters (~975 km)
+    delay = 5, -- Time until first cleaning (seconds)
+    repeatInterval = 600, -- Interval for repeat cleaning in seconds (e.g. 600 for 10 min). Set to ‘nil’ to run only once.
 }
 
 -- Logging
@@ -24,7 +24,7 @@ end
 
 -- Função principal de limpeza
 function MapCleaner.performCleanup()
-    logInfo("Iniciando processo de limpeza do mapa")
+    logInfo("Starting the map cleaning process")
 
     local sphere = {
         x = MapCleaner.config.sphereCenter.x,
@@ -36,12 +36,12 @@ function MapCleaner.performCleanup()
     end)
 
     if not success or not height then
-        logError("Falha ao calcular altura do terreno")
+        logError("Failure to calculate ground height")
         return false
     end
 
     sphere.y = height
-    logInfo(string.format("Centro da esfera - X: %.2f, Y: %.2f, Z: %.2f", sphere.x, sphere.y, sphere.z))
+    logInfo(string.format("Center of the sphere - X: %.2f, Y: %.2f, Z: %.2f", sphere.x, sphere.y, sphere.z))
 
     local volS = {
         id = world.VolumeType.SPHERE,
@@ -56,41 +56,41 @@ function MapCleaner.performCleanup()
     end)
 
     if status then
-        logInfo(string.format("Limpeza concluída com sucesso! Raio de %.2f km", volS.params.radius / 1000))
+        logInfo(string.format("Cleaning successfully completed! Radius of %.2f km", volS.params.radius / 1000))
     else
         logError("Falha na remoção: " .. tostring(err))
     end
 
-    -- Se tiver repetição ativada, agendar próxima execução
+    -- If repeat is enabled, schedule next run
     if MapCleaner.config.repeatInterval then
-        logInfo(string.format("Agendando próxima limpeza em %d segundos", MapCleaner.config.repeatInterval))
+        logInfo(string.format("Scheduling next cleaning in %d seconds", MapCleaner.config.repeatInterval))
         mist.scheduleFunction(MapCleaner.performCleanup, {}, timer.getTime() + MapCleaner.config.repeatInterval)
     end
 
     return status
 end
 
--- Início programado
+-- Scheduled start
 function MapCleaner.init()
-    logInfo("Agendando limpeza inicial do mapa")
+    logInfo("Scheduling initial map cleaning")
     mist.scheduleFunction(MapCleaner.performCleanup, {}, timer.getTime() + MapCleaner.config.delay)
 end
 
--- NOT WORKING ( Opcional Mas não está funcional a parte ) >> trigger.action.addOtherEvent(function(event) 
--- Comando de Chat para ativar manualmente durante a missão
+-- NOT WORKING ( Optional but not functional separately ) >> trigger.action.addOtherEvent(function(event) 
+-- Chat command to activate manually during the mission
 function MapCleaner.enableChatCommand()
-    trigger.action.outText("[MAP CLEANER] Comando de chat ativado! Use '-clearmap' no chat.", 10)
+    trigger.action.outText("[MAP CLEANER] Chat command activated! Use ‘-clearmap’ in chat.", 10)
     -- Verificar mensagens do chat
     trigger.action.addOtherEvent(function(event)
         if event.id == world.event.S_EVENT_PLAYER_CHAT and event.text and event.text == "-clearmap" then
-            logInfo("Comando manual de limpeza recebido via chat")
-            trigger.action.outText("[MAP CLEANER] Executando limpeza manual do mapa!", 10)
+            logInfo("Manual cleaning command received via chat")
+            trigger.action.outText("[MAP CLEANER] Running manual map cleaning!", 10)
             MapCleaner.performCleanup()
         end
     end)
 end
 
--- Executa inicialização
+-- Executes initialization
 MapCleaner.init()
--- (Opcional) Ativa comando de chat
+-- (Optional) Activate chat command
 -- MapCleaner.enableChatCommand()
