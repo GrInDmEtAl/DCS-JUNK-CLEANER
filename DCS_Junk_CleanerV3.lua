@@ -76,7 +76,7 @@ function MapCleaner.init()
     mist.scheduleFunction(MapCleaner.performCleanup, {}, timer.getTime() + MapCleaner.config.delay)
 end
 
--- NOT WORKING ( Opcional Mas não está funcional a parte ) >> trigger.action.addOtherEvent(function(event) 
+-- Não Funcional ( Opcional Mas não está funcional a parte ) >> trigger.action.addOtherEvent(function(event) 
 -- Comando de Chat para ativar manualmente durante a missão
 function MapCleaner.enableChatCommand()
     trigger.action.outText("[MAP CLEANER] Comando de chat ativado! Use '-clearmap' no chat.", 10)
