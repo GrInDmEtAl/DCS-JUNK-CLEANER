@@ -1,36 +1,30 @@
-Creditos para chrisneal72 https://github.com/chrisneal72/DCS-removeJunk-Scripts   
-All Credits https://github.com/chrisneal72/DCS-removeJunk-Scripts Creator of initial changes
+# DCS Junk Cleaner
 
-![image](https://github.com/user-attachments/assets/e9a227ec-efc2-4909-a021-1acd5de74232)
-![image](https://github.com/user-attachments/assets/adb4550d-b17e-4eef-a285-937d49161b3c)
-  
-Em resumo ele limpa as carcaças do cenário/mapa destruídas para teoricamente otimizar desempenho do servidor e cliente
-o valor do trigger do ME 1200 = 20 minutos a cada 20 minutos ele executa o script e o script valida todo o mapa e após 10 segundos limpa todos junk/crateras/debris do mesmo
+## Credits / Créditos
 
-É Necessário o MIST
-https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua
+- **Créditos para:** [chrisneal72](https://github.com/chrisneal72/DCS-removeJunk-Scripts)
+- **All Credits:** [chrisneal72/DCS-removeJunk-Scripts](https://github.com/chrisneal72/DCS-removeJunk-Scripts) – Creator of initial changes
 
-Caso queira limpeza em zonas use o original https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua
+![Imagem 1](https://github.com/user-attachments/assets/e9a227ec-efc2-4909-a021-1acd5de74232)
+![Imagem 2](https://github.com/user-attachments/assets/adb4550d-b17e-4eef-a285-937d49161b3c)
 
-ENG
+---
 
-In short, it cleans up the destroyed map/scenario carcasses to theoretically optimize performance server and client
-the value of the ME trigger 1200 = 20 minutes every 20 minutes it runs the script and the script validates the entire map and after 10 seconds clears all junk/craters/debris  from it
+## Descrição / Description
 
-MIST required
-https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua
+### Português
+Em resumo, este script limpa as carcaças (junk) do cenário ou mapa destruído, com o objetivo de otimizar o desempenho tanto do servidor quanto do cliente.  
+O script é acionado por um trigger configurado com o valor ME 1200 (equivalente a 20 minutos). A cada 20 minutos, ele executa a validação de todo o mapa e, após um atraso de 10 segundos, remove todos os resíduos, crateras e detritos do cenário.
 
-If you want zoned cleaning, use the original https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua  
-    delay = 5, -- Tempo até a primeira limpeza (segundos)  
-    repeatInterval = 60, -- Intervalo para repetição da limpeza em segundos (ex: 600 para 10 min). Coloque 'nil' para executar apenas uma vez.          
-  
+**Requisitos:**
+- **MIST:** [MissionScriptingTools - mist_4_5_128.lua](https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua)
+- Para limpeza por zonas, utilize o script original: [1_RemoveJunkInZones.lua](https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua)
 
-  =====================================  
-V3 Notes DCS_Junk_Cleaner_V3.lua  
-O DCS_Junk_Cleaner_V3 não é necessário fazer como citado acima somente carrega ela diretamente e configurar o tempo inicial e intervalo para executar 
-Exemplo abaixo;  
-![image](https://github.com/user-attachments/assets/0a2d7d6f-7166-422c-a2dc-b02e6b1b80b0)
+### English
+In short, this script cleans up the debris from destroyed scenarios/maps to theoretically optimize performance for both the server and the client.  
+It is triggered every 20 minutes (trigger value ME 1200 equals 20 minutes); every 20 minutes the script validates the entire map and, after a 10-second delay, clears all junk, craters, and debris.
 
-  
-Log Output test.  
-![image](https://github.com/user-attachments/assets/7dac6058-cdcb-4311-8a84-0548f741b965)
+**Requirements:**
+- **MIST:** [MissionScriptingTools - mist_4_5_128.lua](https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua)
+- For zone-based cleaning, use the original script: [1_RemoveJunkInZones.lua](https://github.com/chrisneal72/DCS-removeJunk-Scripts/blob/main/1_RemoveJunkInZones.lua)
+
