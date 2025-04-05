@@ -1,4 +1,3 @@
-
 -- Criador das alterações iniciais https://github.com/chrisneal72/DCS-removeJunk-Scripts
 -- Ajustado por Grindmetal e DeepSeek[DeepThink R1 and Search], treinado para LUA DCS
 -- Sistema de logging
