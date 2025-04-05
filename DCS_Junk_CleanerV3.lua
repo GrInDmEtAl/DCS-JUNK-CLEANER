@@ -9,7 +9,7 @@ MapCleaner.config = {
     sphereCenter = { x = -114146.14614615, z = 287114.61461461 }, -- Centro da esfera
     radius = 975360, -- Raio de limpeza em metros (~975 km)
     delay = 5, -- Tempo até a primeira limpeza (segundos)
-    repeatInterval = 60, -- Intervalo para repetição da limpeza em segundos (ex: 600 para 10 min). Coloque 'nil' para executar apenas uma vez.
+    repeatInterval = 600, -- Intervalo para repetição da limpeza em segundos (ex: 600 para 10 min). Coloque 'nil' para executar apenas uma vez.
 }
 
 -- Logging
