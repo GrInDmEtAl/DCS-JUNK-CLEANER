@@ -89,7 +89,7 @@ end
 -- Comando F10 para acionar manualmente
 ----------------------------------------------------------------
 function MapCleaner:AddF10Command()
-    local MenuRoot = MENU_MISSION:New("🧹 MAP CLEANER")
+    local MenuRoot = MENU_MISSION:New("MAP CLEANER")
     MENU_MISSION_COMMAND:New("Executar limpeza manual agora", MenuRoot, function()
         MESSAGE:New("[MAP CLEANER] Execução manual solicitada.", 10):ToAll()
         self:PerformCleanup()
