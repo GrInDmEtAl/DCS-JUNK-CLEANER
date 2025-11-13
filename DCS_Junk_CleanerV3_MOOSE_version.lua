@@ -1,12 +1,14 @@
 ----------------------------------------------------------------
 
---  INFORMATION ========= NOT TESTED =========
+--  INFORMATION ========= NOT WORKING NOT WORKING NOT WORKING NOT WORKING NOT WORKING  =========
 
 -- MOOSE MAP CLEANER (versão Grindmetal adaptada por GPT Scritper Learn moose)
 -- Requer MOOSE.lua carregado antes.
 -- Remove entulho (debris, crateras, etc.) dentro de uma esfera.
 
---  INFORMATION ========= NOT TESTED =========
+--  INFORMATION ========= NOT WORKING NOT WORKING NOT WORKING NOT WORKING NOT WORKING  =========  
+
+-- NOT WORKING NOT WORKING NOT WORKING NOT WORKING NOT WORKING 
 
 ----------------------------------------------------------------
 
