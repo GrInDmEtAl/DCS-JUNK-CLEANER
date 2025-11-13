@@ -5,6 +5,9 @@
 - **Créditos para:** [chrisneal72](https://github.com/chrisneal72/DCS-removeJunk-Scripts)
 - **All Credits:** [chrisneal72/DCS-removeJunk-Scripts](https://github.com/chrisneal72/DCS-removeJunk-Scripts) – Criador das mudanças iniciais
 
+**Need:**
+- **MIST:** [MissionScriptingTools - mist_4_5_128.lua](https://github.com/mrSkortch/MissionScriptingTools/blob/development/mist_4_5_128.lua)
+
 ## V3 Notes – DCS_Junk_Cleaner_V3.lua
 
 ### Português
